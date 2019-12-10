@@ -296,8 +296,8 @@ menu "Target Images"
 	config TARGET_KERNEL_PARTSIZE
 		int "Kernel partition size (in MB)"
 		depends on GRUB_IMAGES || EFI_IMAGES || USES_BOOT_PART
-		default 200 if TARGET_apm821xx_sata
-		default 500
+		default 8 if TARGET_apm821xx_sata
+		default 16
 
 	config TARGET_ROOTFS_PARTSIZE
 		int "Root filesystem partition size (in MB)"
